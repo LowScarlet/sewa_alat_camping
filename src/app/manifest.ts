@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Aplikasi Sewa Alat Camping',
     short_name: 'SEPING',
     description: 'Aplikasi Khusus Sewa Alat Camping',
-    start_url: '/home/',
+    start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
     theme_color: '#000000',
