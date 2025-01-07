@@ -3,7 +3,6 @@
 
 import { useAuth } from "@/context/AuthContext";
 import axiosInstance from "@/lib/axiosInstance";
-import Link from "next/link";
 import { FormEvent, useState } from "react";
 
 export default function Auth() {
@@ -102,9 +101,6 @@ export default function Auth() {
           {signinLoading ? "Memuat..." : "Masuk"}
         </button>
       </form>
-      <Link href={"/auth/register"} className="mt-4 w-full btn">
-        Daftar
-      </Link>
     </div>
   );
 }

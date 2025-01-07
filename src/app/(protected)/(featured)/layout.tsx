@@ -32,10 +32,14 @@ export default function RootLayout({
           <span className="btm-nav-label">Pesanan</span>
         </button>
         <button
-          className={pathname === "/profile" ? "active" : ""}
+          onClick={() => {
+            localStorage.removeItem('accessToken');
+            router.push('/auth/');
+            window.location.reload();
+          }}
         >
           <CgProfile />
-          <span className="btm-nav-label">Profil</span>
+          <span className="btm-nav-label">Keluar</span>
         </button>
       </div>
     </>
